@@ -53,7 +53,7 @@
             const timer = document.getElementById(id)
             if (timer.textContent.slice(0, 2) === "00") {
                 timer.parentNode.parentNode.removeChild(timer.parentNode)
-                alert("Если задача длится менее 1 минуты всплывает уведомление “Задачи длительностью менее 1 минуты не сохраняются!”")
+                alert("Задачи длительностью менее 1 минуты не сохраняются!")
             } else {
                 timer.id = ""
                 timer.textContent = timer.textContent.slice(0, 2) - 0 + " м"
